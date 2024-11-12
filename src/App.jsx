@@ -1,8 +1,9 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './Home';
-import Over from './Over';
+import Home from './Pages/Home/Home';
+import Over from './Pages/Over/Over';
+import Merch from './Pages/Merch/Merch';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} /> 
         <Route path="/over" element={<Over />} />
+        <Route path="/merch" element={<Merch />} />
       </Routes>
     </BrowserRouter>
   );
