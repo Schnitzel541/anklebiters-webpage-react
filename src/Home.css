@@ -1,0 +1,27 @@
+/* home page */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45vh;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .homepage-container > p {
+    color: white;
+    font-family: SteakRough;
+  }
+  
+  .homepage-container > button {
+    background: none;
+    border: solid white;
+    color: white;
+    padding: 10px;
+    transition: 0.1s;
+  }
+  
+  .homepage-container > button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+  }

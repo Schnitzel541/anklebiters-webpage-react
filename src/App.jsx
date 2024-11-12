@@ -1,19 +1,19 @@
-import './App.css'
-import Header from './components/Header'
-
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './Home';
+import Over from './Over';
 
 function App() {
-
   return (
-    <>
-    <Header />
-    <div className="homepage-container">
-      <img src="/anklebiters-logo-white.png"></img>
-      <p>---COMING SOON---</p>
-      <button>SHOWS</button>
-    </div>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/over" element={<Over />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
