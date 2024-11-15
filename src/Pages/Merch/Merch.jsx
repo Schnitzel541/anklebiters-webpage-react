@@ -1,6 +1,6 @@
 import '/src/App.css'
-import shirtFront from '/public/merch_front.jpg';
-import shirtBack from '/public/merch_back.jpg';
+import shirtFront from '/src/assets/merch_front.jpg';
+import shirtBack from '/src/assets/merch_back.jpg';
 
 
 const Merch = () => {
